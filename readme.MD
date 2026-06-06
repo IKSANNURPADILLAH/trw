@@ -1,4 +1,4 @@
-# Stratum ETH Proxy
+# Stratum Mining Proxy
 
 A lightweight TCP proxy server for forwarding Stratum mining connections from a local port to a remote mining pool. Useful for hiding the actual pool address or routing miner traffic through a VPS.
 
