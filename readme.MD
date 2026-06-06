@@ -53,10 +53,9 @@ npm install
 
 ### 4. Configure Environment Variables
 
-Copy the example env file and edit it:
+Edit .env file:
 
 ```bash
-cp .env.example .env
 nano .env
 ```
 
@@ -105,7 +104,11 @@ systemctl start trw-proxy
 ```bash
 systemctl status trw-proxy
 ```
+### Restart service
 
+```bash
+systemctl restart trw-proxy
+```
 ### Useful Commands
 
 | Command                                  | Description              |
