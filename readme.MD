@@ -41,7 +41,7 @@ npm -v
 ### 2. Clone the Repository
 
 ```bash
-git clone https://IKSANNURPADILLAH/trw.git /root/trw-main
+git clone https://github.com/IKSANNURPADILLAH/trw.git /root/trw-main
 cd /root/trw-main
 ```
 
