@@ -1,0 +1,16 @@
+[Unit]
+Description=Stratum Mining Proxy
+After=network.target
+
+[Service]
+Type=simple
+User=root
+WorkingDirectory=/root/trw-main
+ExecStart=/usr/bin/node /root/trw-main/server.js
+Restart=always
+RestartSec=5
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target
