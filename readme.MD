@@ -111,16 +111,17 @@ systemctl restart trw-proxy
 ```
 ### Useful Commands
 
-| Command                                                     | Description              |
-|-------------------------------------------------------------|--------------------------|
-| `systemctl start trw-proxy`                                 | Start the proxy          |
-| `systemctl stop trw-proxy`                                  | Stop the proxy           |
-| `systemctl restart trw-proxy`                               | Restart the proxy        |
-| `sudo systemctl disable trw-proxy`                          | Disable the proxy        |
-| `sudo rm -f /etc/systemd/system/trw-proxy.service`          | Delete the proxy         |
-| `sudo systemctl daemon-reload`                              | Reload systemd           |
-| `journalctl -u trw-proxy -f`                                | View live logs           |
-| `journalctl -u trw-proxy -n 50`                             | View last 50 log entries |
+| Command                                                     | Description               |
+|-------------------------------------------------------------|---------------------------|
+| `systemctl start trw-proxy`                                 | Start the proxy           |
+| `systemctl stop trw-proxy`                                  | Stop the proxy            |
+| `systemctl restart trw-proxy`                               | Restart the proxy         |
+| `sudo systemctl disable trw-proxy`                          | Disable the proxy         |
+| `sudo rm -f /etc/systemd/system/trw-proxy.service`          | Delete the proxy          |
+| `sudo systemctl daemon-reload`                              | Reload systemd            |
+| `journalctl -u trw-proxy -f`                                | View live logs            |
+| `journalctl -u trw-proxy -n 50`                             | View last 50 log entries  |
+| `watch "ss -ntp | grep :443 | grep ESTAB | wc -l"`          | View total connection 443 |
 ---
 
 ## Running Manually (without service)
