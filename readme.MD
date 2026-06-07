@@ -109,6 +109,12 @@ systemctl status trw-proxy
 ```bash
 systemctl restart trw-proxy
 ```
+
+### check the number of connections
+
+```bash
+watch "ss -ntp | grep :443 | grep ESTAB | wc -l"
+```
 ### Useful Commands
 
 | Command                                                     | Description               |
@@ -121,7 +127,6 @@ systemctl restart trw-proxy
 | `sudo systemctl daemon-reload`                              | Reload systemd            |
 | `journalctl -u trw-proxy -f`                                | View live logs            |
 | `journalctl -u trw-proxy -n 50`                             | View last 50 log entries  |
-| `watch "ss -ntp | grep :443 | grep ESTAB | wc -l"`          | View total connection 443 |
 ---
 
 ## Running Manually (without service)
