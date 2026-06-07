@@ -110,7 +110,7 @@ systemctl status trw-proxy
 systemctl restart trw-proxy
 ```
 
-### check the number of connections
+### Check total connections 
 
 ```bash
 watch "ss -ntp | grep :443 | grep ESTAB | wc -l"
